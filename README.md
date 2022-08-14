@@ -11,3 +11,7 @@
 
 ### How it works:
 When users click the red "Generate Password" button, window prompts will pop-up, with questions regarding what criteria users want to include in their password. Once users have gotten through all the prompts, a randomly generated password that fulfills all their criterias will pop up in the box
+
+## Website link:
+https://phuonghoang68.github.io/Password-generator/
+
