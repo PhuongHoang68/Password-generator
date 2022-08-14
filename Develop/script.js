@@ -9,8 +9,7 @@ function writePassword() {
 
   var password = generatePassword(
     // criteria: password length
-    var passwordLength= (
-      window.prompt("What length do you want your password to be? Write a number between 8 and 128 characters."));
+    var passwordLength= window.prompt("What length do you want your password to be? Write a number between 8 and 128 characters.");
       while (passwordLength<8 || passwordLength>128){
         alert("Invalid response. Password length must be a number between 8&128. Please input a different response");
         window.prompt("What length do you want your password to be? Write a number between 8 and 128 characters.");
@@ -21,8 +20,7 @@ function writePassword() {
       };
     
     // criteria: upper or lower case
-    var UpperLower= (
-      window.prompt("Do you want to include UPPERCASE, LOWERCASE characters, or BOTH? Please write 1 for UPPERCASE, 2 for LOWERCASE, or 3 for BOTH.");
+    var UpperLower= window.prompt("Do you want to include UPPERCASE, LOWERCASE characters, or BOTH? Please write 1 for UPPERCASE, 2 for LOWERCASE, or 3 for BOTH.");
       UpperLower = parseInt(UpperLower);
 
       // use switch case to carry out action
@@ -44,12 +42,10 @@ function writePassword() {
          UpperLower();
          break;
       }
-
-    );  
+};
     
     //criteria: numeric
-    var Numeric= (
-      window.confirm("Do you want to include numeric characters in your password?");
+    var Numeric= window.confirm("Do you want to include numeric characters in your password?");
       if (Numeric) {
         window.alert("Your password will include numeric characters!");
         var Numeric= "0123456789"
@@ -57,11 +53,10 @@ function writePassword() {
         window.alert("Your password will not have numeric characters");
       }
 
-    );
+
 
     //criteria: special characters
-    var SpecialChars= (
-      window.confirm("Do you want to include special characters in your password? Ex: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ " );
+    var SpecialChars= window.confirm("Do you want to include special characters in your password?")
       if (SpecialChars) {
         window.alert("Your password will include special characters!");
         var SpecialChars= "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ " 
@@ -69,7 +64,7 @@ function writePassword() {
         window.alert("Your password will not have special characters");
       }
 
-    );
+    
 
     var chars = Numeric + UpperLower + SpecialChars
 
